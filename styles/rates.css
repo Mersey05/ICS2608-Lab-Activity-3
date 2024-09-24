@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  background-image: url(../images/bluetile.png);
+  padding-top: 147px;
+}
+
+#navi-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+#top-header {
+  height: 80px;
+  background-color: #06397E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+#header-logo {
+  display: flex;
+  align-items: center;
+}
+
+#top-paw-print {
+  height: 65px;
+}
+
+#top-header-text {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0px 2px 5px rgba(5, 0, 0, 0.766);
+  margin-left: 10px;
+}
+
+#login-button {
+  border: none;
+  padding: 13px 35px;
+  background-color: #FBD12D;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-shadow: 0px 1px 2px;
+}
+
+#login-button:hover {
+  transition: 0.5s;
+  opacity: 90%;
+}
+
+#middle-header {
+  height: 67px;
+  background-color: #FBD12D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  box-shadow: 0px 3px 15px;
+  margin-bottom: 5px;
+}
+
+#nav-container {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-items {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  text-shadow: 0px 1px 2px;
+}
+
+.nav-items:hover {
+  text-decoration: underline;
+}
+
+.vl {
+  font-size: 40px;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 430px;
+}
+
+#search-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  text-shadow: 0px 1px 2px;
+  cursor: pointer;
+}
+
+#search {
+  display: flex;
+  height: 2.4em;
+  width: 25em;
+  border: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width:900px) {
+  #search-bar {
+    display: none;
+  }
+}
+
+#bottom-header {
+  height: 400px;
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: 0px 2px 6px;
+}
+
+#yellow-bg {
+  background-color: #FBD12D;
+  height: 370px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#banner-image {
+  height: 370px;
+  width: 100%;
+  display: flex;
+  object-fit: contain;
+
+}
+
+#top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 87%;
+  margin: 0 100px;
+}
+
+#rates-text-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#rates-text-container {
+  background-color: #FBD12D;
+  margin-top: 88px;
+  width: 180px;
+  height: 30px;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px 2px 6px;
+}
+
+#rates-text {
+  text-shadow: 0px 1px 2px;
+  font-weight: 500;
+}
+
+#remind-container {
+  width: 48%;
+  height: 500px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 2px 6px;
+}
+
+
+
+#remind-top-container {
+  background-color: #FBD12D;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 6px;
+  border-radius: 20px 20px 0 0;
+}
+
+#remind-top-text {
+  font-size: 32px;
+  text-shadow: 0px 1px 2px;
+  font-weight: 600;
+}
+
+#remind-text-container {
+  background-color: #06397E;
+  height: 70%;
+  width: 85%;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 6px;
+}
+
+@media (max-width:900px) {
+  #remind-container {
+    width: 48%;
+    height: 500px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 2px 6px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width:900px) {
+  #remind-top-text {
+    font-size: 32px;
+    text-shadow: 0px 1px 2px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+#reminder-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 80%;
+}
+
+.reminder-text {
+  color: white;
+  margin: 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width:900px) {
+  .reminder-text {
+    font-size: 14px;
+  }
+}
+
+#circle-image-container {
+  position: relative;
+  margin-top: 75px;
+  height: 440px;
+  width: 40vw;
+}
+
+.circle {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  box-shadow: 2px 4px 10px;
+}
+
+#circle-one {
+  top: 20px;
+  left: 85px;
+}
+
+#circle-two {
+  bottom: 5px;
+  right: 85px;
+}
+
+.circle-image {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  box-shadow: 2px 4px 10px;
+  border: solid;
+  border-color: #FBD12D;
+  border-width: 6px;
+}
+
+#image-one {
+  top: 14px;
+  left: 100px;
+}
+
+#image-two {
+  bottom: 0px;
+  right: 60px;
+}
+
+@media (max-width:732px) {
+  #circle-image-container {
+    display: none;
+  }
+}
+
+#rates-table-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#table-container {
+  width: 84.4%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 150px;
+}
+
+#table-one {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#table-one th,
+#table-one td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+#table-one th {
+  background-color: #FBD12D;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#table-one td {
+  font-size: 16px;
+}
+
+#table-one tr:hover {
+  background-color: #f1f1f1;
+}
+
+#footer-container {
+  background-color: #FBD748;
+  min-height: 16vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 97.39%;
+  position: relative;
+  bottom: 0;
+  flex-shrink: 0;
+}
+
+#footer-logo {
+  display: flex;
+  margin-left: 25px;
+}
+
+#petcare-container {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#petcare-logo {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 0;
+}
+
+#copyright {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  #footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  #footer-logo {
+    margin-bottom: 15px;
+  }
+
+  #petcare-container {
+    width: 100%;
+    text-align: center;
+  }
+}
