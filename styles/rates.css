@@ -128,6 +128,7 @@ body {
   }
 }
 
+
 #bottom-header {
   height: 400px;
   background-color: #D9D9D9;
@@ -234,29 +235,8 @@ body {
   box-shadow: 0 2px 6px;
 }
 
-@media (max-width:900px) {
-  #remind-container {
-    width: 48%;
-    height: 500px;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #D9D9D9;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 2px 6px;
-    margin-left: 40px;
-  }
-}
 
-@media (max-width:900px) {
-  #remind-top-text {
-    font-size: 32px;
-    text-shadow: 0px 1px 2px;
-    font-weight: 600;
-    text-align: center;
-  }
-}
+
 
 #reminder-list {
   display: flex;
@@ -275,11 +255,7 @@ body {
   text-align: center;
 }
 
-@media (max-width:900px) {
-  .reminder-text {
-    font-size: 14px;
-  }
-}
+
 
 #circle-image-container {
   position: relative;
@@ -328,11 +304,7 @@ body {
   right: 60px;
 }
 
-@media (max-width:732px) {
-  #circle-image-container {
-    display: none;
-  }
-}
+
 
 #rates-table-section {
   display: flex;
@@ -412,19 +384,345 @@ body {
   font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
-  #footer-container {
-    flex-direction: column;
+@media (max-width: 431px) {
+  #navi-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background-color: white;
+  }
+
+  #top-header {
+    height: 80px;
+    width: auto;
+    background-color: #06397E;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
   }
 
-  #footer-logo {
-    margin-bottom: 15px;
+  #header-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70vw;
   }
 
-  #petcare-container {
-    width: 100%;
-    text-align: center;
+  #top-paw-print {
+    height: 65px;
   }
+
+  #top-header-text {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 2px 5px rgba(5, 0, 0, 0.766);
+    margin-left: 10px;
+  }
+
+  #login-button {
+    border: none;
+    padding: 13px 35px;
+    background-color: #FBD12D;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 0px 1px 2px;
+    display: none;
+  }
+
+  #login-button:hover {
+    transition: 0.5s;
+    opacity: 90%;
+  }
+
+  #middle-header {
+    height: 67px;
+    background-color: #FBD12D;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    box-shadow: 0px 3px 15px;
+    margin-bottom: 5px;
+  }
+
+  #nav-container {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  #nav-bar {
+    display: flex;
+  }
+
+  .nav-items {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 2px;
+  }
+
+  .nav-items:hover {
+    text-decoration: underline;
+  }
+
+  .vl {
+    font-size: 40px;
+  }
+
+  #search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 430px;
+    display: none;
+  }
+
+  #search-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 2px;
+    cursor: pointer;
+  }
+
+  #search {
+    display: flex;
+    height: 2.4em;
+    width: 25em;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  #bottom-header {
+    height: 180px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0px 2px 6px;
+    margin-bottom: 5px;
+    width: 100vw;
+  }
+
+  #yellow-bg {
+    display: none;
+  }
+
+  #banner-image {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    object-fit: contain;
+  }
+
+#top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
 }
+
+#rates-text-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#rates-text-container {
+  background-color: #FBD12D;
+  margin-top: 88px;
+  width: 180px;
+  height: 30px;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px 2px 6px;
+}
+
+#rates-text {
+  text-shadow: 0px 1px 2px;
+  font-weight: 500;
+}
+
+#remind-container {
+  width: 90%;
+  height: 500px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 2px 6px;
+}
+
+
+
+#remind-top-container {
+  background-color: #FBD12D;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 6px;
+  border-radius: 20px 20px 0 0;
+}
+
+#remind-top-text {
+  font-size: 32px;
+  text-shadow: 0px 1px 2px;
+  font-weight: 600;
+}
+
+#remind-text-container {
+  background-color: #06397E;
+  height: 70%;
+  width: 85%;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 6px;
+}
+
+
+
+
+#reminder-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 80%;
+}
+
+.reminder-text {
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+#circle-image-container {
+  position: relative;
+  margin-top: 75px;
+  height: 440px;
+  width: 40vw;
+  display: none;
+}
+
+#footer-container {
+  background-color: #FBD748;
+  min-height: 16vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 90.7%;
+  position: relative;
+  bottom: 0;
+  flex-shrink: 0;
+}
+
+#footer-logo {
+  display: flex;
+  margin-left: 0px;
+}
+
+#petcare-container {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+#petcare-logo {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 0;
+}
+
+#copyright {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+}
+
+@media (min-width: 432px) and (max-width: 1025px) {
+  
+  
+  #footer-container {
+      background-color: #FBD748;
+      min-height: 16vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      width: 96%;
+      position: relative;
+      bottom: 0;
+      flex-shrink: 0;
+    }
+  
+    #footer-logo {
+      display: flex;
+      margin-left: 25px;
+    }
+  
+    #petcare-container {
+      width: 10vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+  
+    #petcare-logo {
+      height: 75px;
+      width: 75px;
+      margin-bottom: 0;
+    }
+  
+    #copyright {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+.reminder-text {
+  color: white;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+  
+  }
