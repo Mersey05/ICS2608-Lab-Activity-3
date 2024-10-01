@@ -749,3 +749,34 @@ body {
 }
   
   }
+  
+#hov:hover{
+	animation: popout;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#hov{
+animation: popback;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;	
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+	box-shadow: 2px 2px 2px
+  }
+}
+
+@keyframes popback {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
